@@ -1,0 +1,24 @@
+{
+	"error_base": "0x721000",
+	"errors": [
+	{
+		"code": "ZC_NOENT",
+		"msg": "zone does not exist",
+		"exception": "Error"
+	},
+	{
+		"code": "RANGE",
+		"msg": "parameter value out of range",
+		"exception": "RangeError"
+	},
+	{
+		"code": "PERM",
+		"msg": "permission denied",
+		"exception": "Error"
+	},
+	{
+		"code": "IPD",
+		"msg": "internal libipd error",
+		"exception": "Error"
+	} ]
+}

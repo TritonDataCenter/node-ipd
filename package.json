@@ -1,0 +1,28 @@
+{
+	"author": "Keith M Wesolowski <keith.wesolowski@joyent.com>",
+	"name": "ipd",
+	"description": "libipd(3lib) bindings",
+	"version": "0.0.0",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/wesolows/node-ipd.git"
+	},
+	"bugs": {
+		"url" : "http://github.com/wesolows/node-ipd/issues"
+	},
+	"main": "lib/ipd_binding.node",
+	"engines": {
+		"node": "~0.8.1"
+	},
+	"dependencies": {
+		"v8plus": "~0.0.4"
+	},
+	"devDependencies": {
+		"tap": "~0.2"
+	},
+	"os": [ "solaris" ],
+	"scripts": {
+		"postinstall": "gmake $(eval echo ${MAKE_OVERRIDES})",
+		"test": "./node_modules/.bin/tap ./tst"
+	}
+}
